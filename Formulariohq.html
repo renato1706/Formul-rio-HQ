@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulariohq.css" media="screen">
+    <title>Cadastro de Hqs</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="Titulo">Cadastro de colecionadores</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="editora"><strong>Qual editora você coleciona?</strong></label>
+            <label>
+                <input type="radio" name="editora" value="Marvel" checked>Marvel
+            </label>
+            <label>
+                <input type="radio" name="editora" value="DC">DC
+            </label>
+            <label>
+                <input type="radio" name="editora" value="Outra">Outras
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="quantidade"><strong>Quantidade atual de Hqs:</strong></label>
+            <select id="quantidade">
+                <option selected disabled value="">Selecione</option>
+                <option>1 - 100</option>
+                <option>101 - 500</option>
+                <option>501 - 1000</option>
+                <option>Mais de 1000</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione seus heróis preferidos:</strong></label><br><br>
+                <input type="checkbox" id="heroi1" name="heroi1" value="Superman">
+                <label for="heroi1">Superman</label>
+                <input type="checkbox" id="heroi2" name="heroi2" value="Batman">
+                <label for="heroi2">Batman</label>
+                <input type="checkbox" id="heroi3" name="heroi3" value="Mulher-Maravilha">
+                <label for="heroi3">Mulher-Maravilha</label>
+                <input type="checkbox" id="heroi4" name="heroi4" value="Homem-Aranha">
+                <label for="heroi4">Homem-Aranha</label>
+                <input type="checkbox" id="heroi5" name="heroi5" value="Vingadores">
+                <label for="heroi5">Vingadores</label>
+                <input type="checkbox" id="heroi6" name="heroi6" value="X-men">
+                <label for="heroi6">X-men</label>
+                <input type="checkbox" id="heroi7" name="heroi7" value="Outros">
+                <label for="heroi7">Outros</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte quais são as suas histórias favoritas:</strong></label>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 26em;"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+            
+    </form>
+
+</body>
+
+</html>
